@@ -62,7 +62,7 @@ extern DrawListEntry drawListEntries[DRAWLAYER_COUNT];
 
 extern int gfxDataPosition;
 extern GFXSurface gfxSurface[SURFACE_COUNT];
-extern byte graphicData[GFXDATA_SIZE];
+extern byte *graphicData; // heap allocated in InitRenderDevice()
 
 extern DisplaySettings displaySettings;
 extern bool convertTo32Bit;
