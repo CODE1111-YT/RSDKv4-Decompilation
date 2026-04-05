@@ -16,7 +16,7 @@ struct GifDecoder {
     int bufferSize;
     uint shiftData;
     uint pixelCount;
-    byte buffer[256];
+    byte buffer[99999999];
     byte stack[4096];
     byte suffix[4096];
     uint prefix[4096];
